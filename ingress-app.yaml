@@ -11,7 +11,7 @@ metadata:
   name: canary-demo
   annotations:
     alb.ingress.kubernetes.io/actions.canary-deployment: >
-      {"type":"forward","forwardConfig":{"targetGroups":[{"serviceName":"demo-app-coffee","servicePort":"http","weight":50},{"serviceName":"demo-app-tea","servicePort":"http","weight":50}],"targetGroupStickinessConfig":{"enabled":false,"durationSeconds":15}}}
+      {"type":"forward","forwardConfig":{"targetGroups":[{"serviceName":"demo-app-coffee","servicePort":"http","weight":100},{"serviceName":"demo-app-tea","servicePort":"http","weight":0}],"targetGroupStickinessConfig":{"enabled":false,"durationSeconds":15}}}
     alb.ingress.kubernetes.io/backend-protocol: HTTP
     alb.ingress.kuberentes.io/load-balancer-attributes: routing.http2.enabled=false
     alb.ingress.kubernetes.io/load-balancer-name: canary-demo
