@@ -32,8 +32,8 @@ spec:
 #    - hosts:
 #        - canary.aws.rafay.us
   rules:
-    - host: canary.aws.rafay.us
-      http:
+#    - host: canary.aws.rafay.us
+    -  http:
         paths:
           - path: /
             pathType: Prefix
