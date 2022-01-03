@@ -5,7 +5,7 @@ metadata:
   annotations:
     rafay.dev/registry-kex85j2: rafay-us
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: demo-app-coffee
@@ -32,7 +32,7 @@ metadata:
   annotations:
     rafay.dev/registry-kex85j2: rafay-us
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: demo-app-tea
