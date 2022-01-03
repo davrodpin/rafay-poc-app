@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: demo-app-coffee
   annotations:
-    rafay.dev/registry-kex85j2:rafay-us
+    rafay.dev/registry-kex85j2: rafay-us
 spec:
   replicas: 1
   selector:
@@ -30,7 +30,7 @@ kind: Deployment
 metadata:
   name: demo-app-tea
   annotations:
-    rafay.dev/registry-mpor072: rafay-us-private
+    rafay.dev/registry-kex85j2: rafay-us
 spec:
   replicas: 1
   selector:
